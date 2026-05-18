@@ -141,3 +141,121 @@ button:hover{
   }
 
 }
+/* Smooth Fade Animation */
+
+.screen{
+  animation:fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn{
+
+  from{
+    opacity:0;
+    transform:translateY(20px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+
+}
+
+/* Emotional Intro Quote */
+
+.intro-line{
+  color:#d4af37;
+  font-style:italic;
+  margin-bottom:25px;
+  font-size:20px;
+  line-height:1.7;
+  text-shadow:0 0 10px rgba(212,175,55,0.7);
+}
+
+/* Floating Golden Particles */
+
+body::after{
+  content:"";
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  pointer-events:none;
+  background-image:
+    radial-gradient(gold 1px, transparent 1px);
+  background-size:80px 80px;
+  opacity:0.08;
+  animation:particlesMove 30s linear infinite;
+}
+
+@keyframes particlesMove{
+
+  from{
+    transform:translateY(0);
+  }
+
+  to{
+    transform:translateY(-200px);
+  }
+
+}
+
+/* Cinematic Glow */
+
+.glow{
+  animation:pulseGlow 3s infinite alternate;
+}
+
+@keyframes pulseGlow{
+
+  from{
+    text-shadow:
+      0 0 10px gold,
+      0 0 20px gold;
+  }
+
+  to{
+    text-shadow:
+      0 0 20px gold,
+      0 0 40px gold,
+      0 0 60px gold;
+  }
+
+}
+
+/* Smooth Button Animation */
+
+button{
+  transition:all 0.4s ease;
+}
+
+button:hover{
+  transform:scale(1.08);
+}
+
+/* Floating Hearts Background */
+
+body::before{
+  content:"💛 💫 ✨ 💛";
+  position:fixed;
+  width:100%;
+  top:100%;
+  left:0;
+  font-size:25px;
+  opacity:0.08;
+  animation:floatingHearts 20s linear infinite;
+  pointer-events:none;
+}
+
+@keyframes floatingHearts{
+
+  from{
+    transform:translateY(0);
+  }
+
+  to{
+    transform:translateY(-220vh);
+  }
+
+}
