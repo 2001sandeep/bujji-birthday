@@ -2,21 +2,26 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family:Arial;
+  font-family:Arial, sans-serif;
 }
 
 body{
   background:black;
-  overflow:hidden;
   color:white;
+  overflow:hidden;
 }
+
+/* Background Stars */
 
 .stars{
   position:fixed;
+  top:0;
+  left:0;
   width:100%;
   height:100%;
   background:black;
   overflow:hidden;
+  z-index:0;
 }
 
 .stars::before{
@@ -32,6 +37,7 @@ body{
 }
 
 @keyframes starsMove{
+
   from{
     transform:translateY(0);
   }
@@ -39,18 +45,12 @@ body{
   to{
     transform:translateY(100px);
   }
+
 }
 
-@keyframes moveStars{
-  from{
-    background-position:0 0;
-  }
-  to{
-    background-position:0 1000px;
-  }
-}
+/* Main Screens */
 
-section{
+.screen{
   width:100%;
   height:100vh;
   display:flex;
@@ -58,39 +58,86 @@ section{
   justify-content:center;
   align-items:center;
   text-align:center;
-  padding:20px;
+  padding:25px;
+  position:relative;
+  z-index:2;
 }
+
+/* Hidden Screens */
 
 .hidden{
   display:none;
 }
 
-img{
-  width:250px;
-  height:350px;
-  object-fit:cover;
-  border-radius:20px;
-  border:3px solid gold;
-  box-shadow:0 0 30px gold;
-  margin-bottom:20px;
-}
+/* Text */
 
 h1,h2{
+  margin-bottom:25px;
+}
+
+.glow{
   color:gold;
-  margin-bottom:20px;
+  text-shadow:
+    0 0 10px gold,
+    0 0 20px gold,
+    0 0 40px gold;
+}
+
+.gold{
+  color:gold;
 }
 
 p{
   font-size:18px;
-  line-height:1.6;
+  line-height:1.8;
   margin-bottom:20px;
+  max-width:350px;
 }
 
+/* Buttons */
+
 button{
-  padding:12px 25px;
-  background:gold;
-  color:black;
+  padding:14px 28px;
   border:none;
   border-radius:30px;
+  background:gold;
+  color:black;
   font-size:18px;
-	}
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+button:hover{
+  transform:scale(1.05);
+  box-shadow:0 0 20px gold;
+}
+
+/* Hearts */
+
+#heartContainer{
+  position:relative;
+  width:100%;
+  height:60vh;
+  overflow:hidden;
+}
+
+.heart{
+  position:absolute;
+  bottom:-50px;
+  font-size:35px;
+  animation:float 5s linear forwards;
+  cursor:pointer;
+}
+
+@keyframes float{
+
+  from{
+    transform:translateY(0);
+  }
+
+  to{
+    transform:translateY(-120vh);
+  }
+
+}
