@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Bujji</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<audio id="bgMusic" loop>
+  <source src="music/bgmusic.mp3" type="audio/mp3">
+</audio>
+
+<div class="stars"></div>
+
+<section class="intro" id="intro">
+
+  <h1>Hey Bujji ✨</h1>
+
+  <p>This is not just a birthday wish...</p>
+
+  <button onclick="startWebsite()">
+    Open Your Surprise
+  </button>
+
+</section>
+
+<section class="slide hidden" id="slide1">
+
+  <img src="images/photo1.jpg">
+
+  <div class="content">
+
+    <h2>
+      Meeting you was like listening to a song
+      for the first time and knowing
+      it would become my favorite...
+    </h2>
+
+    <button onclick="showSlide2()">
+      Continue
+    </button>
+
+  </div>
+
+</section>
+
+<section class="slide hidden" id="slide2">
+
+  <img src="images/photo2.jpg">
+
+  <div class="content">
+
+    <h2>
+      You don’t have to be strong with me...
+    </h2>
+
+    <p>
+      You can be tired, messy, unsure...
+      I’ll still look at you like you’re enough.
+    </p>
+
+    <button onclick="showSlide3()">
+      Continue
+    </button>
+
+  </div>
+
+</section>
+
+<section class="slide hidden" id="slide3">
+
+  <img src="images/photo3.jpg">
+
+  <div class="content">
+
+    <h1>Happy Birthday Bujji 🎂</h1>
+
+    <p>
+      Thank you for being born...
+    </p>
+
+    <button onclick="showFinalSlide()">
+      One Last Message
+    </button>
+
+  </div>
+
+</section>
+
+<section class="slide hidden" id="finalSlide">
+
+  <img src="images/photo4.jpg">
+
+  <div class="content">
+
+    <h2>I just love loving you...</h2>
+
+    <p>
+      If love finds me again...
+      I hope it's still you.
+    </p>
+
+    <h1>
+      Happiest Birthday ra naa Bujji Thalli 🫂
+    </h1>
+
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
