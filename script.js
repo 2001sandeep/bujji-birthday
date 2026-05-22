@@ -31,7 +31,7 @@ function typeWriter(element,text,speed=40){
 function startStory(){
 
   document.getElementById("intro").classList.add("hidden");
-
+  document.getElementById("bgMusic").play();
   let slide1=document.getElementById("slide1");
 
   slide1.classList.remove("hidden");
