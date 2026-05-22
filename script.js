@@ -217,9 +217,7 @@ function showGift1(){
 
 }
 
-/* Show Gift 2 */
-
-function showGift2(){
+/function showGift2(){
 
   document.querySelectorAll(".screen").forEach(screen=>{
 
@@ -229,7 +227,39 @@ function showGift2(){
 
   document.getElementById("gift2").classList.remove("hidden");
 
+  createFireworks();
+
 }
+
+/* Fireworks */
+
+function createFireworks(){
+
+  for(let i=0;i<20;i++){
+
+    let firework=document.createElement("div");
+
+    firework.classList.add("firework");
+
+    firework.style.left=Math.random()*100+"%";
+
+    firework.style.top=Math.random()*100+"%";
+
+    document.body.appendChild(firework);
+
+    setTimeout(()=>{
+
+      firework.remove();
+
+    },1000);
+
+  }
+
+}
+* Show Gift 2 */
+
+
+
 /* Anime Rain */
 
 function createRain(){
