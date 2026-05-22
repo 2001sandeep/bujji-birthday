@@ -294,9 +294,16 @@ function createRain(){
   }
 
 }
-
 window.onload = function(){
 
-  createRain();
+  try{
 
-};/* Start Rain */
+    createRain();
+
+  }catch(error){
+
+    console.log("Rain skipped");
+
+  }
+
+};
