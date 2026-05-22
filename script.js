@@ -230,3 +230,29 @@ function showGift2(){
   document.getElementById("gift2").classList.remove("hidden");
 
 }
+/* Anime Rain */
+
+function createRain(){
+
+  let rain=document.getElementById("rain");
+
+  for(let i=0;i<80;i++){
+
+    let drop=document.createElement("div");
+
+    drop.classList.add("drop");
+
+    drop.style.left=Math.random()*100+"%";
+
+    drop.style.animationDuration=
+    (Math.random()*1+0.5)+"s";
+
+    drop.style.opacity=Math.random();
+
+    rain.appendChild(drop);
+
+  }
+
+}
+
+createRain();
