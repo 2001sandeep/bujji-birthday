@@ -286,3 +286,11 @@ function createRain(){
 }
 
 createRain();
+/* Secret Message */
+
+function showSecret(){
+
+  document.getElementById("secretMessage")
+  .classList.remove("hidden");
+
+}
