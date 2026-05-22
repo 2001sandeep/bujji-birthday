@@ -176,18 +176,18 @@ h1,h2{
   margin-bottom:25px;
 }
 
-/* Glow */
-
 .glow{
-  color:gold;
+  color:#ff4d4d;
 
   text-shadow:
-    0 0 10px gold,
-    0 0 20px gold,
-    0 0 40px gold;
+    0 0 10px #ff4d4d,
+    0 0 20px #ff1a1a,
+    0 0 40px #ff0000;
 
   animation:pulseGlow 3s infinite alternate;
-}
+}/* Glow */
+
+
 
 @keyframes pulseGlow{
 
@@ -207,7 +207,7 @@ h1,h2{
 }
 
 .gold{
-  color:gold;
+  color:#ff4d4d;
 }
 
 /* Paragraphs */
@@ -248,7 +248,7 @@ button{
 
   border-radius:30px;
 
-  background:gold;
+  background:#ff1a1a;
 
   color:black;
 
@@ -266,7 +266,7 @@ button:hover{
 
   transform:scale(1.08);
 
-  box-shadow:0 0 20px gold;
+  box-shadow:0 0 20px #ff1a1a;
 
 }
 
