@@ -259,3 +259,49 @@ body::before{
   }
 
 }
+/* Gift Images */
+
+.gift-image{
+  width:280px;
+  max-width:90%;
+  border-radius:20px;
+  margin:25px 0;
+  box-shadow:
+    0 0 20px gold,
+    0 0 40px rgba(255,215,0,0.5);
+  animation:giftGlow 3s infinite alternate;
+}
+
+@keyframes giftGlow{
+
+  from{
+    transform:scale(1);
+  }
+
+  to{
+    transform:scale(1.03);
+  }
+
+}
+
+/* Gift Stars */
+
+.star{
+  position:absolute;
+  bottom:-50px;
+  font-size:35px;
+  animation:floatStar 5s linear forwards;
+  cursor:pointer;
+}
+
+@keyframes floatStar{
+
+  from{
+    transform:translateY(0);
+  }
+
+  to{
+    transform:translateY(-120vh);
+  }
+
+}
