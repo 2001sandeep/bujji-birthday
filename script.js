@@ -132,3 +132,101 @@ function finalSlide(){
   document.getElementById("final").classList.remove("hidden");
 
 }
+/* Open Gift Section */
+
+function openGiftSection(){
+
+  document.querySelectorAll(".screen").forEach(screen=>{
+
+    screen.classList.add("hidden");
+
+  });
+
+  document.getElementById("giftIntro").classList.remove("hidden");
+
+}
+
+/* Start Gift Game */
+
+let starsCollected = 0;
+
+function startGiftGame(){
+
+  document.querySelectorAll(".screen").forEach(screen=>{
+
+    screen.classList.add("hidden");
+
+  });
+
+  document.getElementById("giftGame").classList.remove("hidden");
+
+  let container=document.getElementById("giftContainer");
+
+  let interval=setInterval(()=>{
+
+    let star=document.createElement("div");
+
+    star.classList.add("star");
+
+    star.innerHTML="💫";
+
+    star.style.left=Math.random()*90+"%";
+
+    container.appendChild(star);
+
+    star.onclick=()=>{
+
+      starsCollected++;
+
+      document.getElementById("giftScore").innerHTML=
+      "Stars Collected: "+starsCollected+" / 5";
+
+      star.remove();
+
+      if(starsCollected>=5){
+
+        clearInterval(interval);
+
+        showGift1();
+
+      }
+
+    };
+
+    setTimeout(()=>{
+
+      star.remove();
+
+    },5000);
+
+  },800);
+
+}
+
+/* Show Gift 1 */
+
+function showGift1(){
+
+  document.querySelectorAll(".screen").forEach(screen=>{
+
+    screen.classList.add("hidden");
+
+  });
+
+  document.getElementById("gift1").classList.remove("hidden");
+
+}
+
+/* Show Gift 2 */
+
+function showGift2(){
+
+  document.querySelectorAll(".screen").forEach(screen=>{
+
+    screen.classList.add("hidden");
+
+  });
+
+  document.getElementById("gift2").classList.remove("hidden");
+
+}
