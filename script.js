@@ -31,7 +31,13 @@ function typeWriter(element,text,speed=40){
 function startStory(){
 
   document.getElementById("intro").classList.add("hidden");
-  document.getElementById("bgMusic").play();
+let music = document.getElementById("bgMusic");
+
+music.volume = 0.5;
+
+music.play().catch(error => {
+  console.log("Autoplay blocked");
+});  
   let slide1=document.getElementById("slide1");
 
   slide1.classList.remove("hidden");
