@@ -295,6 +295,8 @@ function createRain(){
 
 }
 
-/* Start Rain */
+window.onload = function(){
 
-createRain();
+  createRain();
+
+};/* Start Rain */
