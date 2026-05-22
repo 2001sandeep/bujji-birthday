@@ -23,6 +23,7 @@ function typeWriter(element,text,speed=40){
     }
 
   },speed);
+
 }
 
 /* Start Website */
@@ -119,7 +120,7 @@ function startGame(){
 
 }
 
-/* Final Slide */
+/* Final Emotional Slide */
 
 function finalSlide(){
 
@@ -132,6 +133,7 @@ function finalSlide(){
   document.getElementById("final").classList.remove("hidden");
 
 }
+
 /* Open Gift Section */
 
 function openGiftSection(){
@@ -146,7 +148,7 @@ function openGiftSection(){
 
 }
 
-/* Start Gift Game */
+/* Gift Unlock Game */
 
 let starsCollected = 0;
 
@@ -217,7 +219,9 @@ function showGift1(){
 
 }
 
-/function showGift2(){
+/* Show Gift 2 */
+
+function showGift2(){
 
   document.querySelectorAll(".screen").forEach(screen=>{
 
@@ -256,11 +260,17 @@ function createFireworks(){
   }
 
 }
-* Show Gift 2 */
 
+/* Secret Message */
 
+function showSecret(){
 
-/* Anime Rain */
+  document.getElementById("secretMessage")
+  .classList.remove("hidden");
+
+}
+
+/* Anime Rain Effect */
 
 function createRain(){
 
@@ -285,12 +295,6 @@ function createRain(){
 
 }
 
+/* Start Rain */
+
 createRain();
-/* Secret Message */
-
-function showSecret(){
-
-  document.getElementById("secretMessage")
-  .classList.remove("hidden");
-
-}
