@@ -410,3 +410,19 @@ body .floating-hearts{
   }
 
 }
+#secretMessage{
+
+  margin-top:25px;
+
+  font-size:20px;
+
+  line-height:1.8;
+
+  color:#ffd6d6;
+
+  text-shadow:
+    0 0 10px rgba(255,77,77,0.4);
+
+  animation:fadeIn 2s ease;
+
+}
