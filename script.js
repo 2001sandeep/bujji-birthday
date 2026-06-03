@@ -347,13 +347,14 @@ function showHeartMsg(num){
 
   msg.innerHTML = messages[num];
 
-  if(!clickedHearts.includes(num)){
-    clickedHearts.push(num);
-  }
-
   if(clickedHearts.length === 6){
-    document.getElementById("finalBtn")
-    .classList.remove("hidden");
-  }
+
+  document.getElementById("allHeartsDone")
+  .classList.remove("hidden");
+
+  document.getElementById("finalBtn")
+  .classList.remove("hidden");
+
+}
 
 }
