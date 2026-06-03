@@ -380,6 +380,11 @@ function showSecret(){
 }
 function showFinale(){
 
-  alert("Finale button clicked!");
+  document.querySelectorAll(".screen").forEach(screen=>{
+    screen.classList.add("hidden");
+  });
+
+  document.getElementById("finale")
+  .classList.remove("hidden");
 
 }
