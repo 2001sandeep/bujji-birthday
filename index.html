@@ -247,9 +247,35 @@ One More Thing...
 <p id="secretMessage" class="hidden">
 Keep going, beautiful. I know you're tired, stressed, sleepy — but this is just a moment. Remember, I'm your biggest fan, and you can handle anything ❤️
 </p>
-
+<button onclick="showHeartWall()">
+One Last Thing ❤️
+</button>
 </section>
 <script src="script.js"></script>
 
 </body>
 </html>
+<section id="heartWall" class="screen hidden">
+
+<h1 class="glow">
+Before You Leave... ❤️
+</h1>
+
+<p>
+Tap the hearts and see what they want to tell you ✨
+</p>
+
+<div id="heartGrid">
+
+<button class="heart-btn" onclick="showHeartMsg(1)">❤️</button>
+<button class="heart-btn" onclick="showHeartMsg(2)">💖</button>
+<button class="heart-btn" onclick="showHeartMsg(3)">💕</button>
+<button class="heart-btn" onclick="showHeartMsg(4)">💗</button>
+<button class="heart-btn" onclick="showHeartMsg(5)">💝</button>
+<button class="heart-btn" onclick="showHeartMsg(6)">💘</button>
+
+</div>
+
+<p id="heartMessage"></p>
+
+</section>
