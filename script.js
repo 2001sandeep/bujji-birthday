@@ -362,3 +362,13 @@ function showHeartMsg(num){
   }
 
 }
+function showFinale(){
+
+  document.querySelectorAll(".screen").forEach(screen=>{
+    screen.classList.add("hidden");
+  });
+
+  document.getElementById("finale")
+  .classList.remove("hidden");
+
+}
