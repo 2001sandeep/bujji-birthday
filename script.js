@@ -362,13 +362,12 @@ function showHeartMsg(num){
   }
 
 }
-function showFinale(){
+function showSecret(){
 
-  document.querySelectorAll(".screen").forEach(screen=>{
-    screen.classList.add("hidden");
-  });
+  document.getElementById("secretMessage")
+  .classList.remove("hidden");
 
-  document.getElementById("finale")
+  document.getElementById("heartWallBtn")
   .classList.remove("hidden");
 
 }
