@@ -320,11 +320,15 @@ function showHeartWall(){
     screen.classList.add("hidden");
   });
 
-  document.getElementById("heartWall")
-  .classList.remove("hidden");
+  const wall = document.getElementById("heartWall");
+
+  if(wall){
+    wall.classList.remove("hidden");
+  }else{
+    alert("Heart Wall not found");
+  }
 
 }
-
 function showHeartMsg(num){
 
   const msg = document.getElementById("heartMessage");
