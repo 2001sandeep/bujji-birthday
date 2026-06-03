@@ -313,3 +313,37 @@ window.onload = function(){
   }
 
 };
+function showHeartWall(){
+
+  document.querySelectorAll(".screen").forEach(screen=>{
+    screen.classList.add("hidden");
+  });
+
+  document.getElementById("heartWall")
+  .classList.remove("hidden");
+
+}
+
+function showHeartMsg(num){
+
+  const msg=document.getElementById("heartMessage");
+
+  const messages={
+
+    1:"You are beautiful. You deserve all the love in the world. ❤️",
+
+    2:"You are a blessing to the people around you. ✨",
+
+    3:"You are the kind of person the world needs more of. 🌙",
+
+    4:"You are stronger than you think. 💪",
+
+    5:"You are special, today and every day. 💖",
+
+    6:"Your smile has the power to heal. And most importantly, you deserve to see yourself the way others see you. ❤️"
+
+  };
+
+  msg.innerHTML=messages[num];
+
+}
