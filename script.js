@@ -368,8 +368,6 @@ function showHeartMsg(num){
 }
 function showSecret(){
 
-  alert("showSecret is working");
-
   document.querySelectorAll(".screen").forEach(screen=>{
     screen.classList.add("hidden");
   });
