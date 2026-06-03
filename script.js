@@ -368,10 +368,11 @@ function showHeartMsg(num){
 }
 function showSecret(){
 
-  document.getElementById("secretMessage")
-  .classList.remove("hidden");
+  document.querySelectorAll(".screen").forEach(screen=>{
+    screen.classList.add("hidden");
+  });
 
-  document.getElementById("heartWallBtn")
+  document.getElementById("motivation")
   .classList.remove("hidden");
 
 }
