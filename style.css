@@ -424,3 +424,48 @@ body .floating-hearts{
   display:block;
   margin:8px 0;
 }
+#heartGrid{
+
+  display:grid;
+
+  grid-template-columns:repeat(3,1fr);
+
+  gap:20px;
+
+  margin-top:30px;
+
+}
+
+.heart-btn{
+
+  font-size:40px;
+
+  background:none;
+
+  border:none;
+
+  cursor:pointer;
+
+  transition:0.3s;
+
+}
+
+.heart-btn:hover{
+
+  transform:scale(1.2);
+
+}
+
+#heartMessage{
+
+  margin-top:30px;
+
+  font-size:22px;
+
+  line-height:1.6;
+
+  color:#ffd6d6;
+
+  max-width:90%;
+
+}
