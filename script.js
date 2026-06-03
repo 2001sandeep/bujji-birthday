@@ -1,3 +1,4 @@
+let clickedHearts = [];
 let collected = 0;
 
 /* Typing Effect */
@@ -326,9 +327,9 @@ function showHeartWall(){
 
 function showHeartMsg(num){
 
-  const msg=document.getElementById("heartMessage");
+  const msg = document.getElementById("heartMessage");
 
-  const messages={
+  const messages = {
 
     1:"You are beautiful. You deserve all the love in the world. ❤️",
 
@@ -344,16 +345,15 @@ function showHeartMsg(num){
 
   };
 
-  msg.innerHTML=messages[num];
+  msg.innerHTML = messages[num];
 
-}
-function showFinale(){
+  if(!clickedHearts.includes(num)){
+    clickedHearts.push(num);
+  }
 
-  document.querySelectorAll(".screen").forEach(screen=>{
-    screen.classList.add("hidden");
-  });
-
-  document.getElementById("finale")
-  .classList.remove("hidden");
+  if(clickedHearts.length === 6){
+    document.getElementById("finalBtn")
+    .classList.remove("hidden");
+  }
 
 }
